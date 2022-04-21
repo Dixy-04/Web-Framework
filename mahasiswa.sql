@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2022 at 04:06 AM
+-- Generation Time: Apr 21, 2022 at 04:17 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -42,6 +42,16 @@ CREATE TABLE `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `mahasiswa`
+--
+
+INSERT INTO `mahasiswa` (`id`, `nama`, `email`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `telepon`, `password`, `created_at`, `updated_at`) VALUES
+(1, 'Mhs1', 'mhs1@gmail.com', 'solo', 'solo', '2022-04-05', 'laki-laki', '08972892831', 'ncaioudn3938c', '2022-04-21 09:10:36', '2022-04-21 09:10:36'),
+(2, 'Mhs2', 'mhs2@gmail.com', 'Solo', 'Sukoharjo', '2022-04-22', 'perempuan', '083267362', 'jxue38e', '2022-04-21 09:10:36', '2022-04-21 09:10:36'),
+(3, 'Mhs1', 'mhs1@gmail.com', 'solo', 'solo', '2022-04-05', 'laki-laki', '08972892831', 'ncaioudn3938c', '2022-04-21 09:10:40', '2022-04-21 09:10:40'),
+(4, 'Mhs2', 'mhs2@gmail.com', 'Solo', 'Sukoharjo', '2022-04-22', 'perempuan', '083267362', 'jxue38e', '2022-04-21 09:10:40', '2022-04-21 09:10:40');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -59,7 +69,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
